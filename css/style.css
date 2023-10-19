@@ -1,0 +1,30 @@
+.imagen-monumento{
+    width: 100px;
+    height: 100px;
+}
+
+hr{
+    margin: 100px 0 !important;
+}
+
+div.carousel-item{
+    height: 400px;
+}
+
+div.carousel-item img{
+    height: 400px;
+
+/* se usa para especificar como se debe cambiar el tamaño de la imagen para que que se ajuste a su contenedor*/
+
+    object-fit: cover;
+
+    /* 
+
+    top -arriba
+    center- centrado
+    left - izq
+    right - derecha
+    bottom - abajo */
+
+    object-position: center;
+}
