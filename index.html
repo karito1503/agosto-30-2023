@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sitio web con Bootstrap</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css"> 
+
+</head>
+<body>
+
+
+    <!-- contenido navegacion-->
+    <nav class="navbar navbar-expand-sm navbar-dark bg-info">
+        <div class="container-fluid">
+            <a class="navbar-brand">Santiago de Cali</a>
+
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+                <!--icon del menu -->
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav m-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">
+                            Nosotros
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    Mision
+                                </a>  
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    Vision
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    Politicas
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="dropdown-item">
+                                    Valores
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Servicios</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+            
+        </div>
+    </nav>
+
+
+
+    <!-- Contenido Carrusel -->
+    <div class="carousel slide" id="carrusel-principal">
+
+        <!-- Indicadores carrusel
+
+        data-bs-target va el nombre del id del carrusel
+
+        data-bs-slide-to indica la posicion del slide, arranca en 0-->
+
+        <div class="carousel-indicators">
+            <button type="button" 
+                data-bs-slide-to="0" 
+                class="active" 
+                data-bs-target="#carrusel-principal"></button>
+            
+            <button type="button"
+                data-bs-slide-to="1" 
+                data-bs-target="#carrusel-principal"></button>
+
+            <button type="button" 
+                data-bs-slide-to="2" 
+                data-bs-target="#carrusel-principal"></button>
+     </div>
+
+        <!-- Contenido imagenes -->
+        <div class="carousel-inner">
+
+            <!-- Imagen -->
+            <div class="carousel-item active">
+                <img class="w-100" src="https://media.viajando.travel/p/853c9be824c8e7387a55743ca4fc7b11/adjuntos/236/imagenes/000/520/0000520733/1200x0/smart/cali-y-sus-hermosos-paisajes.jpg">
+            </div>
+            
+            <div class="carousel-item">
+                <img class="w-100" src="https://www.sliderrevolution.com/wp-content/uploads/revslider/architecture-header-slider/istur_Neo-futuristic_house_with_pool_architecture_by_david_rock_64ad3b44-766a-420a-8ab7-4ef23d6857c3-min.png">
+            </div>
+
+            <div class="carousel-item">
+                <img class="w-100" src="https://pbs.twimg.com/media/FwSIv7TXoAAKl3j.jpg">
+            </div>
+        </div>
+
+        <!-- Navegacion del carrusel -->
+        <button type="button"
+                class="carousel-control-prev"
+                data-bs-target="#carrusel-principal"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+           
+
+        <button type="button"
+                 class="carousel-control-next"
+                 data-bs-target="#carrusel-principal"
+                 data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+            
+    </div>
+
+
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-lg-4 col-md-12 text-center mt-4">
+                
+                <img class="rounded-circle imagen-monumento" src="https://www.prensa-latina.cu/wp-content/uploads/2021/12/20211128_092553.jpg">
+                <h4>Gata Calida</h4>
+                <p>lorem Ipsum</p>
+                <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+
+            <div class="col-lg-4 col-md-12 text-center mt-4">
+                
+                <img class="rounded-circle imagen-monumento" src="https://www.prensa-latina.cu/wp-content/uploads/2021/12/20211128_092523_HDR.jpg">
+                <h4>Gata Florecida</h4>
+                <p>lorem Ipsum</p>
+                <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+
+
+            <div class="col-lg-4 col-md-12 text-center mt-4">
+                
+                <img class="rounded-circle imagen-monumento" src="https://www.prensa-latina.cu/wp-content/uploads/2021/12/20211128_092152.jpg">
+                <h4>Gata Superestrella</h4>
+                <p>lorem Ipsum</p>
+                <a href="#" class="btn btn-primary">Ver mas</a>
+            </div>
+
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+
+            <div class="col-lg-5">
+                <img class="img-fluid" src="https://files.lafm.com.co/assets/public/styles/img_node_706x392/public/2019-09/calilafm_0.jpg.webp?VersionId=iXArx2NbpMo0sCaXLRQ3HeFuWxKiObXO&itok=UolT9qw2">
+            </div>
+            <div class="col-lg-7 py-5">
+               <h2>Bulevar del Rio</h2>
+               <p class="fw-light">El Bulevar de la Avenida Colombia,​ conocido también como el Bulevar del Río por estar situado a orillas del río Cali, es un bulevar ubicado en el centro histórico de la ciudad de Santiago de Cali, Colombia. Porta el nombre de la avenida que otrora transitaba en el lugar donde hoy se encuentra el bulevar y la cual sigue funcionando por medio de un túnel ubicado directamente debajo de éste, siendo este el túnel urbano más largo de Colombia.</p>
+            </div>
+        </div>
+    
+        <hr class="my-5">
+    
+        <div class="row">
+    
+            <div class="col-lg-6">
+                <h2>¿desea mas informacion e cali?</h2>
+                <p class="fw-light">ingresa la informacion en el siguiente formulario para obtener mas informacion</p>
+
+                <form>
+
+                    <!--form control-lg - tamaño del campo grande 
+                        for-control - tamaño del campo por defecto
+                        for-control-sm - tamaño de campo pequeño-->
+
+                    <div class="mb-3">
+                        <label class="form-label">Nombre completo</label>
+                        <input type="text" class="form-control form-control-lg">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Asunto</label>
+                        <input type="text" class="form-control">
+                    </div>
+
+                    <div class="mb-3">
+                        <input type="checkbox" class="form-check-input">
+                        <label class="form-check-label">Acepta terminos y condiciones</label>
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Comentario</label>
+                        <textarea class="form-control"></textarea>
+                    </div>
+
+                    <div class="d-grid mb-3">
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </div>
+                    
+             </form>
+
+                
+            </div>
+    
+            <div class="col-lg-6">
+                <img class="img-fluid" src="https://www.cali.gov.co/desarrolloeconomico/info/principal/media/pubInt/thumbs/thpub_700x400_145566.jpg">
+            </div>
+    
+        </div>
+
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#modal-principal">
+                Ver mapa de Cali
+                </button>
+
+                <!-- contenido modal -->
+                <div class="modal fade" id="modal-principal">
+
+                    <div class="modal-dialog">
+
+                        <div class="modal-content">
+
+                            <!-- cabecera modal -->
+
+                            <div class="modal-header">
+                                <h5 class="modal-title">Mapa de Cali</h5>
+                                
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+
+                            <div class="modal-body">
+
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15930.326900755903!2d-76.55434622166182!3d3.4513887000000048!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e30a67a2a862fa7%3A0x6cbe37efe459a762!2sMonumento%20El%20Gato%20del%20R%C3%ADo!5e0!3m2!1ses-419!2sco!4v1693602844669!5m2!1ses-419!2sco" 
+                                    width="400" 
+                                    height="600" 
+                                    style="border:0;" 
+                                    allowfullscreen="" 
+                                    loading="lazy" 
+                                    referrerpolicy="no-referrer-when-downgrade">
+                                
+                                </iframe>
+
+                                <!--
+                                <img class="img-fluid" src="https://caracoltv.brightspotcdn.com/dims4/default/5037ae2/2147483647/strip/true/crop/851x506+0+0/resize/851x506!/quality/90/?url=http%3A%2F%2Fcaracol-brightspot.s3.amazonaws.com%2F71%2F45%2F47526f864e1daaa6ada51fe1c23f%2Flocalidades-cali.png"> -->
+                            </div>
+
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">
+                                    Cerrar
+                                </button>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div> 
+
+                <hr class="my-5">
+
+
+            </div>
+        </div>
+
+        
+    </div>
+    
+        
+   
+</body>
+</html>
